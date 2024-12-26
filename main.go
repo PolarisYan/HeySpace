@@ -25,6 +25,8 @@ var globalConfig = &mode{
 }
 
 func main() {
+	os.Setenv("LANG", "en_US.UTF-8")
+	os.Setenv("LC_ALL", "en_US.UTF-8")
 	app := &cli.App{
 		Name:     "HeySpace",
 		Usage:    "在中英文之间添加空格",
